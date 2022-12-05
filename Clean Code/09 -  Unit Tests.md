@@ -10,3 +10,22 @@ Clean tests should not break when production code changes, unless those changes 
 
 # Tests Enable the -ilities
 
+Clean tests protect against regressions.
+
+# Clean Tests
+
+- Build, execute, assert
+
+Use as simple APIs as possible; build a suite of test helpers which extract away any complicated construction logic.
+
+# A Dual Standard
+
+Test environments may have less efficient helpers than production code.
+
+# One Assert Per Test
+
+Avoid doing too much in a single test.
+
+# Single Concept Per Test
+
+Trying to test multiple things (an entire user flow) in one test means edge cases will be missed.
