@@ -29,3 +29,13 @@ Avoid doing too much in a single test.
 # Single Concept Per Test
 
 Trying to test multiple things (an entire user flow) in one test means edge cases will be missed.
+
+# F.I.R.S.T.
+
+- Fast: fast enough that they can willingly be run regularly 
+- Independent: tests should be complete in themselves
+- Repeatable: if tests have external dependencies, then failures will be ambiguous
+- Self-Validating: tests must clearly output success/failure
+- Timely: tests should be written before production code
+
+
