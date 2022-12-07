@@ -42,3 +42,15 @@ Many variables with few methods operating on just some means another class shoul
 
 When classes lose cohesion, split them
 
+# Organizing for Change
+
+- any change to committed code introduces risk
+  - retesting is necessitated
+- fix design as soon as you're having to change committed code
+- open-closed principle: open for extension, closed for modification
+
+# Isolating From Change
+
+- rely on interfaces
+  - allows for trivial mocking
+- Dependency Inversion Principle: rely on abstractions
