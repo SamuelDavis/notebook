@@ -1,3 +1,9 @@
+---
+path: /home/sdavis/code/notes/.markdown/Clean\ Code/07\ -\ Error\ Handling.md
+created_at: "2022-11-27 21:37:13 -0500"
+updated_at: "2022-11-30 09:46:33 -0500"
+tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+---
 # Use Exceptions Rather Than Return Codes
 
 Don't force caller to do validation

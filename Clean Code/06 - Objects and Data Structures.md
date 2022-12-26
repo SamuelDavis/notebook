@@ -1,3 +1,9 @@
+---
+path: /home/sdavis/code/notes/.markdown/Clean\ Code/06\ -\ Objects\ and\ Data\ Structures.md
+created_at: "2022-11-27 21:15:17 -0500"
+updated_at: "2022-11-27 21:17:19 -0500"
+tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+---
 # Data Abstraction
 
 make implementation irrelevant; manipulate the concept, not the data

@@ -1,3 +1,9 @@
+---
+path: /home/sdavis/code/notes/.markdown/Clean\ Code/08\ -\ Boundaries.md
+created_at: "2022-11-30 09:46:08 -0500"
+updated_at: "2022-11-30 09:46:08 -0500"
+tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+---
 # Using Third-Party Code
 
 - Reserve stdlib/third party code for use internal to an object
