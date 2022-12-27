@@ -1,5 +1,4 @@
 ---
-path: /home/sdavis/code/notes/.markdown/Clean\ Code/11\ -\ Systems.md
 created_at: "2022-12-10 21:36:28 -0500"
 updated_at: "2022-12-10 21:36:28 -0500"
 tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]

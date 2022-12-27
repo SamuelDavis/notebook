@@ -1,13 +1,12 @@
 ---
-path: /home/sdavis/code/notes/.markdown/Clean\ Code/03\ -\ Functions.md
 created_at: "2022-11-25 18:32:57 -0500"
 updated_at: "2022-11-25 18:32:57 -0500"
 tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
 ---
 # Small!
 
-Width: < 150 characters
-Height: <= 20 lines
+Width: lt 150 characters
+Height: lte 20 lines
 
 Sub-blocks should be function calls
 - keeps it short
