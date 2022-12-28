@@ -1,17 +1,20 @@
 ---
-created_at: "2022-12-05 11:45:16 -0500"
-updated_at: "2022-12-06 21:21:42 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-12-05 11:45:16 -0500'
+updated_at: '2022-12-06 21:21:42 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
+
 # Class Organization
 
 (Variables)
+
 - Public Static
 - Private Static
 - Public Instance
 - Private Instance
 
 (Functions)
+
 - Public Method
 - Private Method
 
@@ -31,6 +34,7 @@ You can make something protected for the sake of testing.
 - better many small, well-defined modules than a few massive, ambiguous modules
 
 Summary:
+
 - many small classes
 - one responsibility per class
 - interop between classes to achieve complexity
@@ -41,7 +45,7 @@ Summary:
 - small number of functions
 - each function operates on as many functions as possible
 
-Many variables with few methods operating on just some means another class should be created 
+Many variables with few methods operating on just some means another class should be created
 
 # Maintaining Cohesion Results in Many Small Classes
 

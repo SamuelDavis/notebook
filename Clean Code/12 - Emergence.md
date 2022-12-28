@@ -1,11 +1,13 @@
 ---
-created_at: "2022-12-11 22:32:27 -0500"
-updated_at: "2022-12-11 22:32:27 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-12-11 22:32:27 -0500'
+updated_at: '2022-12-11 22:32:27 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
+
 # Getting Clean via Emergent Design
 
 simple design...
+
 1. runs all tests
 2. contains no duplication
 3. expresses intent of the programmer

@@ -1,8 +1,9 @@
 ---
-created_at: "2022-11-27 21:15:17 -0500"
-updated_at: "2022-11-27 21:17:19 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-11-27 21:15:17 -0500'
+updated_at: '2022-11-27 21:17:19 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
+
 # Data Abstraction
 
 make implementation irrelevant; manipulate the concept, not the data
@@ -10,10 +11,12 @@ make implementation irrelevant; manipulate the concept, not the data
 # Data/Object Anti-Symmetry
 
 ## modeling
+
 - Data Structure: expose data with no meaningful function
 - Object: hide data with meaningful abstractions
 
 ## paradigms
+
 - Procedural Code:
   - easy to add new functions without changing structures
     - data is simply arguments to functions
@@ -28,13 +31,14 @@ make implementation irrelevant; manipulate the concept, not the data
 # The Law of Demeter
 
 > Any method _f_ of class _C_ should only call the methods of...
+>
 > - _C_
 > - An object created by _f_
 > - An object passed as an argument to _f_
 > - An object held in an instance of _C_
-> 
+>
 > ...and should not call methods on objects returned from the allowed.
-> 
+>
 > "Talk to friends, not to strangers."
 
 # Train Wrecks
@@ -57,10 +61,9 @@ data structures which collect raw data (e.g. database row, socket data) into a k
 
 # Active Record
 
-*data structures* with _database methods only_. Put business rules in separate classes.
+_data structures_ with _database methods only_. Put business rules in separate classes.
 
 # Conclusion
 
 - for behavior, objects
 - for data, structures
-

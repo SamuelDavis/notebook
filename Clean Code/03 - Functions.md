@@ -1,21 +1,23 @@
 ---
-created_at: "2022-11-25 18:32:57 -0500"
-updated_at: "2022-11-25 18:32:57 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-11-25 18:32:57 -0500'
+updated_at: '2022-11-25 18:32:57 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
+
 # Small!
 
 Width: lt 150 characters
 Height: lte 20 lines
 
 Sub-blocks should be function calls
+
 - keeps it short
 - provides self-documentation
 
 # Do One Thing
 
 A function should go no more than one level of abstraction below the function name.
-*Or*
+_Or_
 If a function name is simply a restatement of it's implementation, then it is unnecessary.
 
 # One Level of Abstraction per Function
@@ -42,14 +44,19 @@ Fewer is better. Arguments are a different level of abstraction. Testing is comb
 # Common Monadic Forms
 
 ## Checks
+
 ```php
 function fileExists(string $path): bool;
 ```
+
 ## Transforms
+
 ```ts
 function readFile(string $path): File;
 ```
+
 ## Events
+
 ```ts
 function saveFailed(stdClass $record): void;
 ```
@@ -92,6 +99,7 @@ function format(string $template, string ...$args): string;
 
 - monads: verb/noun pair
 - dyads, etc. may use keywords to imply argument order, e.g.
+
 ```php
 function assertExpectedEqualsActual($expected, $actual): void;
 ```
@@ -100,8 +108,9 @@ function assertExpectedEqualsActual($expected, $actual): void;
 
 side effects may cause unexpected state changes
 temporal couplings
-  - function is only safe to call at certain times
-	  - perhaps due to modified state
+
+- function is only safe to call at certain times
+  - perhaps due to modified state
 
 # Output Arguments
 
@@ -137,4 +146,3 @@ everything in programming is an attempt to reduce duplication
 # Structured Programming
 
 Dijkstra's structured programming rules are not relevant in small functions
-

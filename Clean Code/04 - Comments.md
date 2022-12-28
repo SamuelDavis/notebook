@@ -1,8 +1,9 @@
 ---
-created_at: "2022-11-25 18:32:57 -0500"
-updated_at: "2022-11-25 18:32:57 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-11-25 18:32:57 -0500'
+updated_at: '2022-11-25 18:32:57 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
+
 # Comments
 
 Comments compensate for failing to express intent
@@ -89,5 +90,3 @@ better to improve function name / definition
 # Javadocs in Nonpublic Code
 
 just clutter; devs can read the code if they have to
-
-

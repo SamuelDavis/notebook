@@ -1,9 +1,10 @@
 ---
-created_at: "2022-11-25 18:32:57 -0500"
-updated_at: "2022-11-25 18:32:57 -0500"
-tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Code"]
+created_at: '2022-11-25 18:32:57 -0500'
+updated_at: '2022-11-25 18:32:57 -0500'
+tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
- # Use intention-revealing names
+
+# Use intention-revealing names
 
 - avoid constant literals
 - use longer, more explicit names
@@ -21,7 +22,7 @@ tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Cod
 - avoid context-meaningful but generally-meaningless words
   - for all intents and purposes, "data" and "info" are the same word
   - a1 and a2 are not meaningfully different
-  - requiring context creates mental overhead 
+  - requiring context creates mental overhead
 
 # Use Pronounceable Names
 
@@ -32,7 +33,7 @@ tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Cod
 - the length of a variable name should correspond to its scope
   - single letter names for short, local functions
 
-# Avoid Encodings 
+# Avoid Encodings
 
 - compilers and tooling give you meta information about membership and type, etc
 
@@ -52,13 +53,16 @@ tags: ["programming", "architecture", "author:Robert C. Martin", "book:Clean Cod
 ## Prefixes
 
 Setter
-  : set
+: set
+
 Getter
-  : get
+: get
+
 Guard
-  : is
+: is
+
 Overridden, static constructor
-  : from
+: from
 
 # Don't Be Cute
 
@@ -67,7 +71,7 @@ Overridden, static constructor
 # Pick One Word Per Concept
 
 - avoid e.g. "user", "account", "member"
-- be consistent 
+- be consistent
 - avoid synonyms
 
 # Don't Pun
@@ -75,20 +79,23 @@ Overridden, static constructor
 - don't reuse a label if the underlying implementation is different
 
 # Solution Domain Names (preferred)
-  - computer science terms
-  - less likely to change than problem domain
+
+- computer science terms
+- less likely to change than problem domain
 
 # Problem Domain Names (if no solution name exists)
-  - business terms 
-  - less likely to change than whim
+
+- business terms
+- less likely to change than whim
 
 # Add Meaningful Context
 
 If variables are ambiguous...
+
 - extract them to a custom type (preferable)
 - add prefixes/suffixes (acceptable)
 
-# Don't add Gratuitous Context 
+# Don't add Gratuitous Context
 
 - shorter names are better
 - don't repeat contextual information
