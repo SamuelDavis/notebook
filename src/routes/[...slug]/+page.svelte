@@ -1,10 +1,14 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	export let data: PageData;
-	const { page } = data;
+	const {
+		page: { slug, Component }
+	} = data;
 </script>
 
 <svelte:head>
-	<title>{page.slug}</title>
+	<title>{slug}</title>
 </svelte:head>
+
+<Component />
 <pre>{JSON.stringify(data, null, 2)}</pre>
