@@ -1,7 +1,7 @@
 ---
 created_at: '2022-12-11 22:32:27 -0500'
 updated_at: '2022-12-11 22:32:27 -0500'
-tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
+tags: ['programming:architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
 
 # Getting Clean via Emergent Design

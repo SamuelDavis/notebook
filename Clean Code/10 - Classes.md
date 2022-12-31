@@ -1,7 +1,7 @@
 ---
 created_at: '2022-12-05 11:45:16 -0500'
 updated_at: '2022-12-06 21:21:42 -0500'
-tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
+tags: ['programming:architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
 
 # Class Organization

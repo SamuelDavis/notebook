@@ -1,7 +1,7 @@
 ---
 created_at: '2022-11-30 10:15:53 -0500'
 updated_at: '2022-12-05 09:41:47 -0500'
-tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
+tags: ['programming:architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
 
 # The Three Laws of TDD

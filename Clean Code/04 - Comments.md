@@ -1,7 +1,7 @@
 ---
 created_at: '2022-11-25 18:32:57 -0500'
 updated_at: '2022-11-25 18:32:57 -0500'
-tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
+tags: ['programming:architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
 
 # Comments

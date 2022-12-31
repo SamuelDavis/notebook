@@ -1,7 +1,7 @@
 ---
 created_at: '2022-11-27 21:37:13 -0500'
 updated_at: '2022-11-30 09:46:33 -0500'
-tags: ['programming', 'architecture', 'author:Robert C. Martin', 'book:Clean Code']
+tags: ['programming:architecture', 'author:Robert C. Martin', 'book:Clean Code']
 ---
 
 # Use Exceptions Rather Than Return Codes
