@@ -33,3 +33,10 @@ export function isNode<T>(value: any): value is Node<T> {
 		typeof value === 'object'
 	);
 }
+export function isLeaf<T>(value: any): value is Node<T> {
+	return (
+		typeof value === 'object' &&
+		['type', 'value'].every((property) => property in value) &&
+		value.type === TreeType.Leaf
+	);
+}
