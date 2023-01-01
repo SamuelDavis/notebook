@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-3b2ccbbf.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-4ebd0daf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-a01aa152.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-af0ea0f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9568005d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-a81526e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-8a0cfb75.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3a91bd79.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-600de522.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e8c1e695.js"><title>Clean Code/10 - Classes</title><!-- HEAD_svelte-13cdjt9_START --><!-- HEAD_svelte-13cdjt9_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header><details ><summary>Navigation</summary>
+		<nav><ul class="svelte-1jbsuun"><li><details open><summary>Clean Code</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Clean Code/02 - Meaningful Names">02 - Meaningful Names</a>
+		</li><li><a href="/Clean Code/03 - Functions">03 - Functions</a>
+		</li><li><a href="/Clean Code/04 - Comments">04 - Comments</a>
+		</li><li><a href="/Clean Code/06 - Objects and Data Structures">06 - Objects and Data Structures</a>
+		</li><li><a href="/Clean Code/07 - Error Handling">07 - Error Handling</a>
+		</li><li><a href="/Clean Code/08 - Boundaries">08 - Boundaries</a>
+		</li><li><a href="/Clean Code/09 - Unit Tests">09 - Unit Tests</a>
+		</li><li><a href="/Clean Code/10 - Classes">10 - Classes</a>
+		</li><li><a href="/Clean Code/11 - Systems">11 - Systems</a>
+		</li><li><a href="/Clean Code/12 - Emergence">12 - Emergence</a>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Foo</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Bar</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Qux</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Bar/Qux/Grunt">Grunt</a>
+		</li><li><a href="/Foo/Bar/Qux/Thud">Thud</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Fiz</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Fiz/Baz">Baz</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul></nav></details></header>
+
+
+
+<h1>Class Organization</h1>
+<p>(Variables)</p>
+<ul><li>Public Static</li>
+<li>Private Static</li>
+<li>Public Instance</li>
+<li>Private Instance</li></ul>
+<p>(Functions)</p>
+<ul><li>Public Method</li>
+<li>Private Method</li></ul>
+<h1>Encapsulation</h1>
+<p>You can make something protected for the sake of testing.</p>
+<h1>Classes Should Be Small</h1>
+<ul><li>Class names describe responsibilities<ul><li>if a name is too generic, the class is doing too much</li></ul></li>
+<li>classes should be able to be described briefly without words like if, and, or but</li></ul>
+<h1>Single Responsibility Principle</h1>
+<ul><li>code should have one reason to change</li>
+<li>better many small, well-defined modules than a few massive, ambiguous modules</li></ul>
+<p>Summary:</p>
+<ul><li>many small classes</li>
+<li>one responsibility per class</li>
+<li>interop between classes to achieve complexity</li></ul>
+<h1>Cohesion</h1>
+<ul><li>small number of variables</li>
+<li>small number of functions</li>
+<li>each function operates on as many functions as possible</li></ul>
+<p>Many variables with few methods operating on just some means another class should be created</p>
+<h1>Maintaining Cohesion Results in Many Small Classes</h1>
+<p>When classes lose cohesion, split them</p>
+<h1>Organizing for Change</h1>
+<ul><li>any change to committed code introduces risk<ul><li>retesting is necessitated</li></ul></li>
+<li>fix design as soon as you’re having to change committed code</li>
+<li>open-closed principle: open for extension, closed for modification</li></ul>
+<h1>Isolating From Change</h1>
+<ul><li>rely on interfaces<ul><li>allows for trivial mocking</li></ul></li>
+<li>Dependency Inversion Principle: rely on abstractions</li></ul>
+
+
+		<script type="module" data-sveltekit-hydrate="1fh1x6v">
+			import { start } from "../_app/immutable/start-4ebd0daf.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1fh1x6v"]').parentNode,
+				version: "1672609313055",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

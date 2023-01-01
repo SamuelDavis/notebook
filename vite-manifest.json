@@ -1,0 +1,285 @@
+{
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout-3b2ccbbf.css",
+    "src": "src/routes/+layout.css"
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-1ba5abaf.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-e8c1e695.js",
+      "src/routes/[...slug]/+page.svelte"
+    ]
+  },
+  "src/routes/[...slug]/+page.ts": {
+    "file": "_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js",
+    "src": "src/routes/[...slug]/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "_index-3a91bd79.js",
+      "__page-e8c1e695.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-33cc859b.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__layout-600de522.js",
+      "src/routes/+layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-5439e69a.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-169f00c4.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "_control-f5b05b5f.js": {
+    "file": "_app/immutable/chunks/control-f5b05b5f.js"
+  },
+  "__layout-600de522.js": {
+    "file": "_app/immutable/chunks/_layout-600de522.js",
+    "imports": [
+      "_index-3a91bd79.js"
+    ]
+  },
+  "src/routes/[...slug]/+page.svelte": {
+    "file": "_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js",
+    "src": "src/routes/[...slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-adf35fe5.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-a01aa152.js",
+      "_stores-a81526e4.js"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "_app/immutable/modules/pages/_layout.ts-8a0cfb75.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "_index-3a91bd79.js",
+      "__layout-600de522.js"
+    ]
+  },
+  ".markdown/Foo/Bar/Qux/Grunt.md": {
+    "file": "_app/immutable/chunks/Grunt-2f81dd62.js",
+    "src": ".markdown/Foo/Bar/Qux/Grunt.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "_preload-helper-41c905a7.js": {
+    "file": "_app/immutable/chunks/preload-helper-41c905a7.js"
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-d2591ecb.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".markdown/Clean Code/09 - Unit Tests.md": {
+    "file": "_app/immutable/chunks/09 - Unit Tests-00789bbf.js",
+    "src": ".markdown/Clean Code/09 - Unit Tests.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "__page-e8c1e695.js": {
+    "file": "_app/immutable/chunks/_page-e8c1e695.js",
+    "imports": [
+      "_index-3a91bd79.js",
+      "_control-f5b05b5f.js"
+    ]
+  },
+  "_index-3a91bd79.js": {
+    "file": "_app/immutable/chunks/index-3a91bd79.js",
+    "imports": [
+      "_preload-helper-41c905a7.js"
+    ],
+    "dynamicImports": [
+      ".markdown/Clean Code/02 - Meaningful Names.md",
+      ".markdown/Clean Code/03 - Functions.md",
+      ".markdown/Clean Code/04 - Comments.md",
+      ".markdown/Clean Code/06 - Objects and Data Structures.md",
+      ".markdown/Clean Code/07 - Error Handling.md",
+      ".markdown/Clean Code/08 - Boundaries.md",
+      ".markdown/Clean Code/09 - Unit Tests.md",
+      ".markdown/Clean Code/10 - Classes.md",
+      ".markdown/Clean Code/11 - Systems.md",
+      ".markdown/Clean Code/12 - Emergence.md",
+      ".markdown/Foo/Bar/Qux/Grunt.md",
+      ".markdown/Foo/Bar/Qux/Thud.md",
+      ".markdown/Foo/Fiz/Baz.md",
+      ".markdown/Clean Code/02 - Meaningful Names.md",
+      ".markdown/Clean Code/03 - Functions.md",
+      ".markdown/Clean Code/04 - Comments.md",
+      ".markdown/Clean Code/06 - Objects and Data Structures.md",
+      ".markdown/Clean Code/07 - Error Handling.md",
+      ".markdown/Clean Code/08 - Boundaries.md",
+      ".markdown/Clean Code/09 - Unit Tests.md",
+      ".markdown/Clean Code/10 - Classes.md",
+      ".markdown/Clean Code/11 - Systems.md",
+      ".markdown/Clean Code/12 - Emergence.md",
+      ".markdown/Foo/Fiz/Baz.md",
+      ".markdown/Foo/Bar/Qux/Grunt.md",
+      ".markdown/Foo/Bar/Qux/Thud.md"
+    ]
+  },
+  ".markdown/Clean Code/07 - Error Handling.md": {
+    "file": "_app/immutable/chunks/07 - Error Handling-a70882e5.js",
+    "src": ".markdown/Clean Code/07 - Error Handling.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Foo/Bar/Qux/Thud.md": {
+    "file": "_app/immutable/chunks/Thud-7dced3fa.js",
+    "src": ".markdown/Foo/Bar/Qux/Thud.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Foo/Fiz/Baz.md": {
+    "file": "_app/immutable/chunks/Baz-5cec7f26.js",
+    "src": ".markdown/Foo/Fiz/Baz.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "_stores-a81526e4.js": {
+    "file": "_app/immutable/chunks/stores-a81526e4.js",
+    "imports": [
+      "_index-a01aa152.js",
+      "_singletons-af0ea0f1.js"
+    ]
+  },
+  "_singletons-af0ea0f1.js": {
+    "file": "_app/immutable/chunks/singletons-af0ea0f1.js",
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/12 - Emergence.md": {
+    "file": "_app/immutable/chunks/12 - Emergence-36bd5579.js",
+    "src": ".markdown/Clean Code/12 - Emergence.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/08 - Boundaries.md": {
+    "file": "_app/immutable/chunks/08 - Boundaries-ac9ba352.js",
+    "src": ".markdown/Clean Code/08 - Boundaries.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/11 - Systems.md": {
+    "file": "_app/immutable/chunks/11 - Systems-e77dde10.js",
+    "src": ".markdown/Clean Code/11 - Systems.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "_index-a01aa152.js": {
+    "file": "_app/immutable/chunks/index-a01aa152.js"
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-9568005d.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-a01aa152.js",
+      "_stores-a81526e4.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout-3b2ccbbf.css"
+    ]
+  },
+  ".markdown/Clean Code/02 - Meaningful Names.md": {
+    "file": "_app/immutable/chunks/02 - Meaningful Names-ef92e9b4.js",
+    "src": ".markdown/Clean Code/02 - Meaningful Names.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/10 - Classes.md": {
+    "file": "_app/immutable/chunks/10 - Classes-e06e03bc.js",
+    "src": ".markdown/Clean Code/10 - Classes.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/06 - Objects and Data Structures.md": {
+    "file": "_app/immutable/chunks/06 - Objects and Data Structures-b02ef32e.js",
+    "src": ".markdown/Clean Code/06 - Objects and Data Structures.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/04 - Comments.md": {
+    "file": "_app/immutable/chunks/04 - Comments-9133677b.js",
+    "src": ".markdown/Clean Code/04 - Comments.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  ".markdown/Clean Code/03 - Functions.md": {
+    "file": "_app/immutable/chunks/03 - Functions-53e8c685.js",
+    "src": ".markdown/Clean Code/03 - Functions.md",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-a01aa152.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-4ebd0daf.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-a01aa152.js",
+      "_singletons-af0ea0f1.js",
+      "_preload-helper-41c905a7.js",
+      "_control-f5b05b5f.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js"
+    ]
+  }
+}

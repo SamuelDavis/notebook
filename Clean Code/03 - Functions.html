@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-3b2ccbbf.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-4ebd0daf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-a01aa152.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-af0ea0f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9568005d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-a81526e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-8a0cfb75.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3a91bd79.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-600de522.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e8c1e695.js"><title>Clean Code/03 - Functions</title><!-- HEAD_svelte-13cdjt9_START --><!-- HEAD_svelte-13cdjt9_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header><details ><summary>Navigation</summary>
+		<nav><ul class="svelte-1jbsuun"><li><details open><summary>Clean Code</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Clean Code/02 - Meaningful Names">02 - Meaningful Names</a>
+		</li><li><a href="/Clean Code/03 - Functions">03 - Functions</a>
+		</li><li><a href="/Clean Code/04 - Comments">04 - Comments</a>
+		</li><li><a href="/Clean Code/06 - Objects and Data Structures">06 - Objects and Data Structures</a>
+		</li><li><a href="/Clean Code/07 - Error Handling">07 - Error Handling</a>
+		</li><li><a href="/Clean Code/08 - Boundaries">08 - Boundaries</a>
+		</li><li><a href="/Clean Code/09 - Unit Tests">09 - Unit Tests</a>
+		</li><li><a href="/Clean Code/10 - Classes">10 - Classes</a>
+		</li><li><a href="/Clean Code/11 - Systems">11 - Systems</a>
+		</li><li><a href="/Clean Code/12 - Emergence">12 - Emergence</a>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Foo</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Bar</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Qux</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Bar/Qux/Grunt">Grunt</a>
+		</li><li><a href="/Foo/Bar/Qux/Thud">Thud</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Fiz</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Fiz/Baz">Baz</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul></nav></details></header>
+
+
+
+<h1>Small!</h1>
+<p>Width: lt 150 characters
+Height: lte 20 lines</p>
+<p>Sub-blocks should be function calls</p>
+<ul><li>keeps it short</li>
+<li>provides self-documentation</li></ul>
+<h1>Do One Thing</h1>
+<p>A function should go no more than one level of abstraction below the function name.
+<em>Or</em>
+If a function name is simply a restatement of it’s implementation, then it is unnecessary.</p>
+<h1>One Level of Abstraction per Function</h1>
+<ul><li>high level: getHtml</li>
+<li>low level: concat(”\n”)</li></ul>
+<h1>The Stepdown Rule</h1>
+<p>Each level of abstraction should have it’s own function, each invoking only one level below itself.</p>
+<h1>Switch Statements</h1>
+<p>Switch statements are acceptable in abstract factories generating polymorphic objects</p>
+<h1>Use Descriptive Names</h1>
+<p>Longer, more descriptive names are desirable</p>
+<h1>Function Arguments</h1>
+<p>Fewer is better. Arguments are a different level of abstraction. Testing is combinatorially complex.</p>
+<h1>Common Monadic Forms</h1>
+<h2>Checks</h2>
+<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token keyword">function</span> <span class="token function-definition function">fileExists</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$path</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">bool</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h2>Transforms</h2>
+<pre class="language-ts"><!-- HTML_TAG_START --><code class="language-ts"><span class="token keyword">function</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token builtin">string</span> $path<span class="token punctuation">)</span><span class="token operator">:</span> File<span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h2>Events</h2>
+<pre class="language-ts"><!-- HTML_TAG_START --><code class="language-ts"><span class="token keyword">function</span> <span class="token function">saveFailed</span><span class="token punctuation">(</span>stdClass $record<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1>Flag Arguments</h1>
+<p>Better multiple functions than functions with flags.</p>
+<h1>Dyadic Functions</h1>
+<p>convert to monadic functions by converting to member function or creating a separate class to wrap</p>
+<h1>Triadic Functions</h1>
+<p>each new argument is combinatorially more complicated</p>
+<h1>Argument Objects</h1>
+<p>reduce number of args by grouping args together into domain objects</p>
+<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token comment">// worse</span>
+<span class="token keyword">function</span> <span class="token function-definition function">makeCircle</span><span class="token punctuation">(</span><span class="token keyword type-hint">float</span> <span class="token variable">$x</span><span class="token punctuation">,</span> <span class="token keyword type-hint">float</span> <span class="token variable">$y</span><span class="token punctuation">,</span> <span class="token keyword type-hint">float</span> <span class="token variable">$radius</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">Circle</span><span class="token punctuation">;</span>
+<span class="token comment">// better</span>
+<span class="token keyword">function</span> <span class="token function-definition function">makeCircle</span><span class="token punctuation">(</span><span class="token class-name type-declaration">Point</span> <span class="token variable">$point</span><span class="token punctuation">,</span> <span class="token keyword type-hint">float</span> <span class="token variable">$radius</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token class-name return-type">Circle</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1>Argument Lists</h1>
+<p>functions accepting argument lists technically collapse that list to a single argument, e.g.</p>
+<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token comment">// monadic</span>
+<span class="token keyword">function</span> <span class="token function-definition function">concat</span><span class="token punctuation">(</span><span class="token keyword type-declaration">string</span> <span class="token operator">...</span><span class="token variable">$args</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span><span class="token punctuation">;</span>
+<span class="token comment">// dyadic</span>
+<span class="token keyword">function</span> <span class="token function-definition function">format</span><span class="token punctuation">(</span><span class="token keyword type-hint">string</span> <span class="token variable">$template</span><span class="token punctuation">,</span> <span class="token keyword type-declaration">string</span> <span class="token operator">...</span><span class="token variable">$args</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">string</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1>Verbs and Keywords</h1>
+<ul><li>monads: verb/noun pair</li>
+<li>dyads, etc. may use keywords to imply argument order, e.g.</li></ul>
+<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token keyword">function</span> <span class="token function-definition function">assertExpectedEqualsActual</span><span class="token punctuation">(</span><span class="token variable">$expected</span><span class="token punctuation">,</span> <span class="token variable">$actual</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword return-type">void</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1>Have No Side Effects</h1>
+<p>side effects may cause unexpected state changes
+temporal couplings</p>
+<ul><li>function is only safe to call at certain times<ul><li>perhaps due to modified state</li></ul></li></ul>
+<h1>Output Arguments</h1>
+<p>in OO, <code>this</code> is the output argument</p>
+<h1>Command Query Separation</h1>
+<p>read state, write state, not both</p>
+<pre class="language-php"><!-- HTML_TAG_START --><code class="language-php"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'foo'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'bar'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// vs</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">propertyExists</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'foo'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'foo'</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">'bar'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><!-- HTML_TAG_END --></pre>
+<h1>Prefer Exceptions to Returning Error Codes</h1>
+<p>exceptions propagate naturally, return codes do not</p>
+<h1>Extract Try/Catch Blocks</h1>
+<p>try/catch blocks bifercate between normal processing and error processing; simplify the logic as much as possible</p>
+<h1>Error Handling Is One Thing</h1>
+<p>functions do one thing =&gt; error handling is one thing; unique functions for error cases</p>
+<h1>Don’t Repeat Yourself</h1>
+<p>everything in programming is an attempt to reduce duplication</p>
+<h1>Structured Programming</h1>
+<p>Dijkstra’s structured programming rules are not relevant in small functions</p>
+
+
+		<script type="module" data-sveltekit-hydrate="1p9hjls">
+			import { start } from "../_app/immutable/start-4ebd0daf.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1p9hjls"]').parentNode,
+				version: "1672609313055",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

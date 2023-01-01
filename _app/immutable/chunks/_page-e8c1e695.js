@@ -1,0 +1,1 @@
+import{g as e}from"./index-3a91bd79.js";import{H as t}from"./control-f5b05b5f.js";function a(o,r){return new t(o,r)}const n=async o=>{try{return{page:await e(o.params.slug)}}catch(r){throw console.error(r),a(404,"Not found")}},p=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{p as _,n as l};

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-3b2ccbbf.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-4ebd0daf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-a01aa152.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-af0ea0f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9568005d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-a81526e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-8a0cfb75.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3a91bd79.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-600de522.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e8c1e695.js"><title>Clean Code/02 - Meaningful Names</title><!-- HEAD_svelte-13cdjt9_START --><!-- HEAD_svelte-13cdjt9_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header><details ><summary>Navigation</summary>
+		<nav><ul class="svelte-1jbsuun"><li><details open><summary>Clean Code</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Clean Code/02 - Meaningful Names">02 - Meaningful Names</a>
+		</li><li><a href="/Clean Code/03 - Functions">03 - Functions</a>
+		</li><li><a href="/Clean Code/04 - Comments">04 - Comments</a>
+		</li><li><a href="/Clean Code/06 - Objects and Data Structures">06 - Objects and Data Structures</a>
+		</li><li><a href="/Clean Code/07 - Error Handling">07 - Error Handling</a>
+		</li><li><a href="/Clean Code/08 - Boundaries">08 - Boundaries</a>
+		</li><li><a href="/Clean Code/09 - Unit Tests">09 - Unit Tests</a>
+		</li><li><a href="/Clean Code/10 - Classes">10 - Classes</a>
+		</li><li><a href="/Clean Code/11 - Systems">11 - Systems</a>
+		</li><li><a href="/Clean Code/12 - Emergence">12 - Emergence</a>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Foo</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Bar</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Qux</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Bar/Qux/Grunt">Grunt</a>
+		</li><li><a href="/Foo/Bar/Qux/Thud">Thud</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Fiz</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Fiz/Baz">Baz</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul></nav></details></header>
+
+
+
+<h1>Use intention-revealing names</h1>
+<ul><li>avoid constant literals</li>
+<li>use longer, more explicit names</li>
+<li>rely on object orientation/custom types</li></ul>
+<h1>Avoid Disinformation</h1>
+<ul><li>don’t use inappropriate keywords<ul><li>“myList” which is not a List object</li>
+<li>avoid enshrining implementation details</li></ul></li>
+<li>avoid similar names that may be easily confused</li></ul>
+<h1>Make Meaningful Distinctions</h1>
+<ul><li>avoid context-meaningful but generally-meaningless words<ul><li>for all intents and purposes, “data” and “info” are the same word</li>
+<li>a1 and a2 are not meaningfully different</li>
+<li>requiring context creates mental overhead</li></ul></li></ul>
+<h1>Use Pronounceable Names</h1>
+<ul><li>make it easy and intuitive to discuss your code unambiguously</li></ul>
+<h1>Use Searchable Names</h1>
+<ul><li>the length of a variable name should correspond to its scope<ul><li>single letter names for short, local functions</li></ul></li></ul>
+<h1>Avoid Encodings</h1>
+<ul><li>compilers and tooling give you meta information about membership and type, etc</li></ul>
+<h1>Avoid Mental Mapping</h1>
+<ul><li>learn and use industry terms which accurately describe what you’re doing<ul><li>e.g. list, map, collection, array have discrete imprecations</li></ul></li></ul>
+<h1>Class Names</h1>
+<ul><li>Noun[, Verb/Phrase]</li></ul>
+<h1>Method Names</h1>
+<ul><li>Verb[, Noun/Phrase]</li></ul>
+<h2>Prefixes</h2>
+<p>Setter
+: set</p>
+<p>Getter
+: get</p>
+<p>Guard
+: is</p>
+<p>Overridden, static constructor
+: from</p>
+<h1>Don’t Be Cute</h1>
+<ul><li>avoid culturally or temporally bounded language</li></ul>
+<h1>Pick One Word Per Concept</h1>
+<ul><li>avoid e.g. “user”, “account”, “member”</li>
+<li>be consistent</li>
+<li>avoid synonyms</li></ul>
+<h1>Don’t Pun</h1>
+<ul><li>don’t reuse a label if the underlying implementation is different</li></ul>
+<h1>Solution Domain Names (preferred)</h1>
+<ul><li>computer science terms</li>
+<li>less likely to change than problem domain</li></ul>
+<h1>Problem Domain Names (if no solution name exists)</h1>
+<ul><li>business terms</li>
+<li>less likely to change than whim</li></ul>
+<h1>Add Meaningful Context</h1>
+<p>If variables are ambiguous…</p>
+<ul><li>extract them to a custom type (preferable)</li>
+<li>add prefixes/suffixes (acceptable)</li></ul>
+<h1>Don’t add Gratuitous Context</h1>
+<ul><li>shorter names are better</li>
+<li>don’t repeat contextual information</li>
+<li>premeditate potential naming conflicts, e.g. Address, Email address, PostalAddress</li>
+<li></li></ul>
+
+
+		<script type="module" data-sveltekit-hydrate="15z5ws7">
+			import { start } from "../_app/immutable/start-4ebd0daf.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="15z5ws7"]').parentNode,
+				version: "1672609313055",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

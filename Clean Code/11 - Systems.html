@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-3b2ccbbf.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-4ebd0daf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-a01aa152.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-af0ea0f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9568005d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-a81526e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-8a0cfb75.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3a91bd79.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-600de522.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e8c1e695.js"><title>Clean Code/11 - Systems</title><!-- HEAD_svelte-13cdjt9_START --><!-- HEAD_svelte-13cdjt9_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header><details ><summary>Navigation</summary>
+		<nav><ul class="svelte-1jbsuun"><li><details open><summary>Clean Code</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Clean Code/02 - Meaningful Names">02 - Meaningful Names</a>
+		</li><li><a href="/Clean Code/03 - Functions">03 - Functions</a>
+		</li><li><a href="/Clean Code/04 - Comments">04 - Comments</a>
+		</li><li><a href="/Clean Code/06 - Objects and Data Structures">06 - Objects and Data Structures</a>
+		</li><li><a href="/Clean Code/07 - Error Handling">07 - Error Handling</a>
+		</li><li><a href="/Clean Code/08 - Boundaries">08 - Boundaries</a>
+		</li><li><a href="/Clean Code/09 - Unit Tests">09 - Unit Tests</a>
+		</li><li><a href="/Clean Code/10 - Classes">10 - Classes</a>
+		</li><li><a href="/Clean Code/11 - Systems">11 - Systems</a>
+		</li><li><a href="/Clean Code/12 - Emergence">12 - Emergence</a>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Foo</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Bar</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Qux</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Bar/Qux/Grunt">Grunt</a>
+		</li><li><a href="/Foo/Bar/Qux/Thud">Thud</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Fiz</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Fiz/Baz">Baz</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul></nav></details></header>
+
+
+
+<h1>Separate Constructing a System from Using It</h1>
+<h2>separate processes:</h2>
+<ul><li>startup: construction / wiring</li>
+<li>runtime: user-manipulation of the process</li></ul>
+<p>avoid small conveniences which mix concerns; construction is a concern, it should be the single concern of a single class</p>
+<h1>Separation of Main</h1>
+<ol><li>main function builds all objects necessary for the system</li>
+<li>main passes objects to application</li>
+<li>application uses already-initialized objects</li></ol>
+<h1>Factories</h1>
+<p>if you don’t know when to build an object, but will need to build one eventually, use a Factory</p>
+<h1>Dependency Injection</h1>
+<p>Inversion of Control; delegate responsibilities to other, dedicated objects</p>
+<p>Injecting dependencies via the controller guarantees the object shares no part of dependency management</p>
+<h1>Scaling Up</h1>
+<p>Systems can scale cleanly only if their concerns are well-separated.</p>
+<h1>Cross-Cutting Concerns</h1>
+<p>common behaviors across multiple objects</p>
+<h1>Java Proxies, Aspect Programming, and Testing, etc.</h1>
+<p>facilitate testing however possible: Reduce dependencies on concrete implementations wherever possible; rely on plain old objects or similar as much as possible in order to facilitate testing</p>
+
+
+		<script type="module" data-sveltekit-hydrate="8bbb6o">
+			import { start } from "../_app/immutable/start-4ebd0daf.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="8bbb6o"]').parentNode,
+				version: "1672609313055",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

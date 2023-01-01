@@ -1,0 +1,1 @@
+import{S as l,i,s as c,k as h,q as m,l as d,m as p,r as _,h as r,b as f,E as u,B as n}from"./index-a01aa152.js";function x(o){let a,s;return{c(){a=h("h1"),s=m("Baz")},l(e){a=d(e,"H1",{});var t=p(a);s=_(t,"Baz"),t.forEach(r)},m(e,t){f(e,a,t),u(a,s)},p:n,i:n,o:n,d(e){e&&r(a)}}}class z extends l{constructor(a){super(),i(this,a,null,x,c,{})}}export{z as default};

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-3b2ccbbf.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-4ebd0daf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-a01aa152.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-af0ea0f1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9568005d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-a81526e4.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.ts-8a0cfb75.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3a91bd79.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-600de522.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_...slug_/_page.svelte-f6e14e2b.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_...slug_/_page.ts-2d191407.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e8c1e695.js"><title>Clean Code/06 - Objects and Data Structures</title><!-- HEAD_svelte-13cdjt9_START --><!-- HEAD_svelte-13cdjt9_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+<header><details ><summary>Navigation</summary>
+		<nav><ul class="svelte-1jbsuun"><li><details open><summary>Clean Code</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Clean Code/02 - Meaningful Names">02 - Meaningful Names</a>
+		</li><li><a href="/Clean Code/03 - Functions">03 - Functions</a>
+		</li><li><a href="/Clean Code/04 - Comments">04 - Comments</a>
+		</li><li><a href="/Clean Code/06 - Objects and Data Structures">06 - Objects and Data Structures</a>
+		</li><li><a href="/Clean Code/07 - Error Handling">07 - Error Handling</a>
+		</li><li><a href="/Clean Code/08 - Boundaries">08 - Boundaries</a>
+		</li><li><a href="/Clean Code/09 - Unit Tests">09 - Unit Tests</a>
+		</li><li><a href="/Clean Code/10 - Classes">10 - Classes</a>
+		</li><li><a href="/Clean Code/11 - Systems">11 - Systems</a>
+		</li><li><a href="/Clean Code/12 - Emergence">12 - Emergence</a>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Foo</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Bar</summary>
+					<ul class="svelte-1jbsuun"><li><details ><summary>Qux</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Bar/Qux/Grunt">Grunt</a>
+		</li><li><a href="/Foo/Bar/Qux/Thud">Thud</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li><li><details ><summary>Fiz</summary>
+					<ul class="svelte-1jbsuun"><li><a href="/Foo/Fiz/Baz">Baz</a>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul>
+				</details>
+		</li>
+</ul></nav></details></header>
+
+
+
+<h1>Data Abstraction</h1>
+<p>make implementation irrelevant; manipulate the concept, not the data</p>
+<h1>Data/Object Anti-Symmetry</h1>
+<h2>modeling</h2>
+<ul><li>Data Structure: expose data with no meaningful function</li>
+<li>Object: hide data with meaningful abstractions</li></ul>
+<h2>paradigms</h2>
+<ul><li>Procedural Code:<ul><li>easy to add new functions without changing structures<ul><li>data is simply arguments to functions</li></ul></li>
+<li>hard to add new structures without changing functions<ul><li>functions have no case for handling new structure</li></ul></li></ul></li>
+<li>Object Oriented Code:<ul><li>easy to add new classes without changing functions<ul><li>polymorphism</li></ul></li>
+<li>hard to add new functions without changing classes<ul><li>add new function to base class/interface, inheritors must implement</li></ul></li></ul></li></ul>
+<h1>The Law of Demeter</h1>
+<blockquote><p>Any method <em>f</em> of class <em>C</em> should only call the methods of…</p>
+<ul><li><em>C</em></li>
+<li>An object created by <em>f</em></li>
+<li>An object passed as an argument to <em>f</em></li>
+<li>An object held in an instance of <em>C</em></li></ul>
+<p>…and should not call methods on objects returned from the allowed.</p>
+<p>“Talk to friends, not to strangers.”</p></blockquote>
+<h1>Train Wrecks</h1>
+<p>Long chains digging deeply into nested objects requires a function to know too much about the rest of the application, but data structures are fine.</p>
+<h1>Hybrids</h1>
+<p>Avoid: a mixed object and data structure; hard to add to, hard to change.</p>
+<h2>Hiding Structure</h2>
+<p>Objects do something; don’t ask for internals. Instead of asking for internals, move implementation into the object.</p>
+<h1>Data Transfer Objects</h1>
+<p>data structures which collect raw data (e.g. database row, socket data) into a known, compiler-parsable structure.</p>
+<p>“Beans” are data transfer objects which have getters/setters for every property and no other methods</p>
+<h1>Active Record</h1>
+<p><em>data structures</em> with <em>database methods only</em>. Put business rules in separate classes.</p>
+<h1>Conclusion</h1>
+<ul><li>for behavior, objects</li>
+<li>for data, structures</li></ul>
+
+
+		<script type="module" data-sveltekit-hydrate="1k1nyb6">
+			import { start } from "../_app/immutable/start-4ebd0daf.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="1k1nyb6"]').parentNode,
+				version: "1672609313055",
+				hydrate: {
+					node_ids: [0, 3],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
