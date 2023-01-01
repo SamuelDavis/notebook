@@ -1,7 +1,14 @@
+import type { Markdown, Page, Tree } from '../../types';
+
+const DEFAULT_METADATA: Markdown['metadata'] = {
+	created_at: new Date().toISOString(),
+	updated_at: new Date().toISOString(),
+	tags: []
+};
 export async function indexPages() {
 	const files = (await import.meta.glob('./../../../.markdown/**/*.md')) as Record<
 		string,
-		() => Promise<typeof import('*.md')>
+		() => Promise<Markdown>
 	>;
 	const imports = Object.entries(files).map(async ([filepath, resolver]) => {
 		const { metadata } = await resolver();
@@ -12,18 +19,42 @@ export async function indexPages() {
 }
 
 export async function getPage(slug: string) {
-	const { metadata, default: Component } = await import(`./../../../.markdown/${slug}.md`);
+	const { metadata = DEFAULT_METADATA, default: Component } = (await import(
+		`./../../../.markdown/${slug}.md`
+	)) as Markdown;
 	return { slug, metadata: parseMetadata(metadata), Component };
 }
 
-function parseMetadata(metadata: typeof import('*.md')['metadata']) {
-	const { created_at, updated_at, tags } = metadata;
+export async function indexFileTree() {
+	const pages = await indexPages();
+	return pages.reduce<Tree<Page>>((acc, page) => {
+		let iterator: Record<string, any> = acc;
+		let parts = page.slug.split('/');
+		const end = parts.pop();
+		if (!end) return acc;
+		for (const part of parts) {
+			iterator[part] = iterator[part] ?? {
+				type: 'node',
+				value: {}
+			};
+			iterator = iterator[part].value;
+		}
+		iterator[end] = {
+			type: 'leaf',
+			value: page
+		};
+		return acc;
+	}, {});
+}
+
+function parseMetadata(metadata?: Markdown['metadata']): Page['metadata'] {
+	const { created_at, updated_at, tags } = { ...DEFAULT_METADATA, ...metadata };
 	return {
 		created_at: new Date(created_at),
 		updated_at: new Date(updated_at),
 		tags: tags.map((tag) => {
-			let [category, value] = tag.split(':') as (null | string)[];
-			if (!value) {
+			let [category, value] = tag.split(':') as any[];
+			if (category && !value) {
 				value = category;
 				category = null;
 			}
